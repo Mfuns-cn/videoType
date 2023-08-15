@@ -1,0 +1,50 @@
+{
+  "name": "videotype",
+  "version": "0.2.2",
+  "description": "Get video size, duration and type from url or File",
+  "scripts": {
+    "build": "tsc index.ts --declaration"
+  },
+  "module": "index.js",
+  "main": "index.js",
+  "jsnext:main": "index.js",
+  "umd:main": "index.js",
+  "source": "index.ts",
+  "typings": "index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./index.js",
+    "require": "./index.js",
+    "default": "./index.js"
+  },
+  "repository": "https://github.com/Mfuns-cn/videoType.git",
+  "keywords": [
+    "video",
+    "type",
+    "extension",
+    "html5",
+    "blob",
+    "mediastream",
+    "mediatrack",
+    "duration",
+    "length",
+    "size",
+    "binary"
+  ],
+  "homepage": "https://github.com/Mfuns-cn/videoType.git",
+  "authors": [
+    "Amoyensis <amoyensis@outlook.com>"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  }
+}

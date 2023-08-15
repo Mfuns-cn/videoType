@@ -1,0 +1,36 @@
+{
+  "compileOnSave": true,
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "composite": true,
+    "target": "es6",
+    "typeRoots": ["src/typings"],
+    "lib": ["DOM", "es2020", "ES2015", "ESNext", "DOM.Iterable"],
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "paths": {
+      "tslib": ["./node_modules/tslib/tslib.d"],
+      "*": ["src/typings/*"]
+    },
+    "strict": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "pretty": true,
+    "noEmitOnError": false,
+    "declaration": true,
+    "declarationMap": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "inlineSourceMap": true,
+    "importHelpers": true,
+    "esModuleInterop": true
+  }
+}
