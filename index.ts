@@ -29,13 +29,19 @@ function getTypeFromBinaryData(binaryData: Uint8Array) {
   }
 }
 
-async function getVideoType(video: string | File) {
+async function getVideoType(
+  video: string | File
+): Promise<"mp4" | "flv" | "m3u8" | "dash" | undefined> {
   if (typeof video === "string") {
-    return fetch(video).then(async (res) => {
-      const arrayBuffer = await res.arrayBuffer();
-      const binaryData = new Uint8Array(arrayBuffer);
-      return getTypeFromBinaryData(binaryData);
-    });
+    return fetch(video)
+      .then(async (res) => {
+        const arrayBuffer = await res.arrayBuffer();
+        const binaryData = new Uint8Array(arrayBuffer);
+        return getTypeFromBinaryData(binaryData);
+      })
+      .catch(() => {
+        return undefined;
+      });
   } else {
     const arrayBuffer = await video.arrayBuffer();
     const binaryData = new Uint8Array(arrayBuffer);

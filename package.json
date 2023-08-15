@@ -1,6 +1,6 @@
 {
   "name": "videotype",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Get video size, duration and type from url or File",
   "scripts": {
     "build": "tsc index.ts --declaration"
